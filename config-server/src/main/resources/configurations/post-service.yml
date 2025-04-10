@@ -1,0 +1,17 @@
+server:
+  port: 8094
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/postdb
+    username: kalhan
+    password: kalhan
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+application:
+  file:
+    uploads:
+      photos-output-path: ./uploads

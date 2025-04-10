@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.53">
+    <root id="1">
+      <ServerVersion>8.0.6</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="authdb">
+      <LastIntrospectionLocalTimestamp>2025-04-10.04:42:23</LastIntrospectionLocalTimestamp>
+    </schema>
+    <schema id="4" parent="1" name="config"/>
+    <schema id="5" parent="1" name="local"/>
+    <schema id="6" parent="1" name="userdb">
+      <LastIntrospectionLocalTimestamp>2025-04-10.04:42:23</LastIntrospectionLocalTimestamp>
+    </schema>
+    <table id="7" parent="3" name="activation_tokens"/>
+    <table id="8" parent="3" name="roles"/>
+    <table id="9" parent="3" name="tokens"/>
+    <table id="10" parent="6" name="users"/>
+    <column id="11" parent="7" name="_id">
+      <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
+    </column>
+    <column id="12" parent="7" name="createdAt">
+      <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
+    </column>
+    <column id="13" parent="7" name="expiresAt">
+      <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
+    </column>
+    <column id="14" parent="7" name="token">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="15" parent="7" name="user">
+      <Position>1</Position>
+      <StoredType>DBRef|12s</StoredType>
+    </column>
+    <column id="16" parent="7" name="userId">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="17" parent="7" name="_class">
+      <Position>2</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="18" parent="8" name="_id">
+      <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
+    </column>
+    <column id="19" parent="8" name="_class">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="20" parent="8" name="name">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="21" parent="9" name="_id">
+      <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
+    </column>
+    <column id="22" parent="9" name="_class">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="23" parent="9" name="expired">
+      <Position>1</Position>
+      <StoredType>Boolean|12s</StoredType>
+    </column>
+    <column id="24" parent="9" name="revoked">
+      <Position>1</Position>
+      <StoredType>Boolean|12s</StoredType>
+    </column>
+    <column id="25" parent="9" name="token">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="26" parent="9" name="user">
+      <Position>1</Position>
+      <StoredType>DBRef|12s</StoredType>
+    </column>
+    <column id="27" parent="9" name="userId">
+      <Position>1</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="28" parent="10" name="_id">
+      <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
+    </column>
+    <column id="29" parent="10" name="_class">
+      <Position>2</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="30" parent="10" name="accountLocked">
+      <Position>3</Position>
+      <StoredType>Boolean|12s</StoredType>
+    </column>
+    <column id="31" parent="10" name="email">
+      <Position>4</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="32" parent="10" name="enabled">
+      <Position>5</Position>
+      <StoredType>Boolean|12s</StoredType>
+    </column>
+    <column id="33" parent="10" name="firstname">
+      <Position>6</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="34" parent="10" name="followers">
+      <Position>7</Position>
+      <StoredType>list|4999545s</StoredType>
+    </column>
+    <column id="35" parent="10" name="followers.accountLocked">
+      <Position>8</Position>
+      <StoredType>Boolean|12s</StoredType>
+    </column>
+    <column id="36" parent="10" name="followers.email">
+      <Position>9</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="37" parent="10" name="followers.enabled">
+      <Position>10</Position>
+      <StoredType>Boolean|12s</StoredType>
+    </column>
+    <column id="38" parent="10" name="followers.firstname">
+      <Position>11</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="39" parent="10" name="followers.followers">
+      <Position>12</Position>
+      <StoredType>list|4999545s</StoredType>
+    </column>
+    <column id="40" parent="10" name="followers.lastname">
+      <Position>13</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="41" parent="10" name="followers.password">
+      <Position>14</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="42" parent="10" name="followers.roles">
+      <Position>15</Position>
+      <StoredType>Array|2003s</StoredType>
+    </column>
+    <column id="43" parent="10" name="lastname">
+      <Position>16</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="44" parent="10" name="password">
+      <Position>17</Position>
+      <StoredType>String|12s</StoredType>
+    </column>
+    <column id="45" parent="10" name="roles">
+      <Position>18</Position>
+      <StoredType>Array|2003s</StoredType>
+    </column>
+  </database-model>
+</dataSource>
