@@ -3,20 +3,11 @@ server:
 spring:
   profiles:
     active: native
-#    active: git
   application:
     name: config-server
   cloud:
     config:
       server:
-#        git:
-#          uri: https://github.com/bekalhan/kalhan-config.git
-#          username: bekalhan
-#          password: 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
-#          timeout: 5
-#          clone-on-start: true
-#          force-pull: true
-#          default-label: main
         native:
           search-locations: classpath:/configurations
 
