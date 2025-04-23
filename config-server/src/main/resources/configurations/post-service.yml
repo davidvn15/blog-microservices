@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5433/postdb
+    url: jdbc:postgresql://localhost:5435/postdb
     username: kalhan
     password: kalhan
   jpa:
@@ -11,6 +11,9 @@ spring:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    change-log: classpath:/db/liquibase-changelog.xml
+    default-schema: blog
 application:
   file:
     uploads:

@@ -62,7 +62,7 @@ services:
     image: postgres:latest
     container_name: my-postgres
     ports:
-      - "5433:5432"
+      - "5435:5432"
     environment:
       - POSTGRES_USER=kalhan
       - POSTGRES_PASSWORD=kalhan
